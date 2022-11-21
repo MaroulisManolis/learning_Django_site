@@ -1,9 +1,63 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     My Blog
 {% endblock %}
 
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"
+{% endblock %}
+
 {% block content %}
-    <h1>Welcome to my blog</h1>
+    <header id="main-navigation">
+        <h1><a href="">Maroulis' Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="" alt="Manolis - The Author of This Blog" />
+            <h2>MANOLIS BLOG</h2>
+        </header>
+        <p>Hi! I'm Manolis and I love to blog about my home island!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain Hiking" />
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There's nothing like the views you get 
+                                when hiking in the mountains of Naxos! 
+                                Just imagine a clear sky, the Aegean Sea 
+                                and many of the smaller islands floating 
+                                in the sea around you!
+                            </p>
+                        </div>
+                    </a>
+                </article>    
+            <li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What I Do</h2>
+        <p>
+            I love anything that has to do with nature, 
+            specially when you can experience it on your 
+            own! 
+        </p>
+        <p>
+            My goal is to keep learning new things and pass on 
+            the knowledge to others who are interested!
+        </p>
+    </section>
 {% endblock %}
