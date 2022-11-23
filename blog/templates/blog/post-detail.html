@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountain_sunset.jpg" %}" alt="Post Title" />
+            <address>By Manolis</address>
+            <div>
+                Last updated on <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+    
+    <main>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Hic maxime excepturi officia, consectetur eius nam
+             cupiditate, accusamus tenetur a blanditiis 
+             aspernatur ad quisquam odio laudantium laboriosam
+              eum numquam, quod aperiam.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Hic maxime excepturi officia, consectetur eius nam
+             cupiditate, accusamus tenetur a blanditiis 
+             aspernatur ad quisquam odio laudantium laboriosam
+              eum numquam, quod aperiam.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Hic maxime excepturi officia, consectetur eius nam
+             cupiditate, accusamus tenetur a blanditiis 
+             aspernatur ad quisquam odio laudantium laboriosam
+              eum numquam, quod aperiam.
+        </p>
+    </main>
+{% endblock %}
